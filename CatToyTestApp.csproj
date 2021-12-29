@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MMALSharp" />
+    <None Remove="MMALSharp.FFmpeg" />
+    <None Remove="System.Device.Gpio" />
+    <None Remove="Iot.Device.Bindings" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MMALSharp" Version="0.7.0-380" />
+    <PackageReference Include="MMALSharp.FFmpeg" Version="0.7.0-380" />
+    <PackageReference Include="OpenCvSharp4" Version="4.5.3.20211204" />
+    <PackageReference Include="OpenCvSharp4.runtime.debian.10-amd64" Version="4.3.0.20200424" />
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.5.3.20211204" />
+    <PackageReference Include="System.Device.Gpio" Version="1.5.0" />
+    <PackageReference Include="Iot.Device.Bindings" Version="1.5.0" />
+  </ItemGroup>
+</Project>
